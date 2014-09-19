@@ -20,7 +20,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "AFHTTPRequestOperation.h"
 #import "GROAuth2SessionManager.h"
 
 NSString * const kGROAuthCodeGrantType = @"authorization_code";

@@ -27,6 +27,8 @@
 #endif
 #import "AFOAuthCredential.h"
 
+#import "AFHTTPRequestOperation.h"
+
 #ifndef _SECURITY_SECITEM_H_
 #warning Security framework not found in project, or not included in precompiled header. Keychain persistence functionality will not be available.
 #endif
