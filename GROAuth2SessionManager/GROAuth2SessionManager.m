@@ -142,11 +142,9 @@ NSString * const kGROAuthRefreshGrantType = @"refresh_token";
 	
     NSString *urlString;
     if ([self oAuthURL]) {
-        urlString = [NSString stringWithFormat:@"%@%@", [self.oAuthURL absoluteString], path];
-        //        urlString = [[NSURL URLWithString:path relativeToURL:[self oAuthURL]] absoluteString];
+        urlString = [[NSURL URLWithString:path relativeToURL:[self oAuthURL]] absoluteString];
     } else {
-        urlString = [NSString stringWithFormat:@"%@%@", [self.baseURL absoluteString], path];
-        //        urlString = [[NSURL URLWithString:path relativeToURL:[self baseURL]] absoluteString];
+        urlString = [[NSURL URLWithString:path relativeToURL:[self baseURL]] absoluteString];
     }
 	
     NSError *error;
