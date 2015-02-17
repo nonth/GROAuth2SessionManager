@@ -186,7 +186,7 @@ NSString * const kGROAuthRefreshGrantType = @"refresh_token";
         [self setAuthorizationHeaderWithCredential:credential];
 		
         if (success) {
-            success(credential);
+            success(credential, responseObject);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if (failure) {
